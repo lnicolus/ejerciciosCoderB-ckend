@@ -1,0 +1,10 @@
+        <div class="flex w-full text-center">
+            <button id="input" >Input new item</button>
+            <button id="modify" >Modify a register</button>
+        </div>
+        <form id="productForm" action="/api/products" method="post">
+            <input type="text" name="title" placeholder="Name">
+            <input type="number" placeholder="price" name="price">
+            <input type="url" placeholder="thumbnail" name="thumbail">
+            <button type="submit">Add</button>
+        </form>

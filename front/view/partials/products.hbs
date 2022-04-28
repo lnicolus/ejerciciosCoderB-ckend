@@ -1,0 +1,20 @@
+<h1 class="text-center m-3 font-bold text-4xl">Products</h1>
+<div class="flex flex-col w-3/4 my-8" style="place-items: center">
+    <div class="flex w-full py-2 px-4 text-center font-bold">
+        <div class="w-8 mr-2">Id</div>
+        <div class="w-3/4 text-left">Product</div>
+        <div class="w-20">Price</div>
+        <div class="w-48">Thumbnail</div>
+    </div>
+    <div id="productDisplay" class="w-full flex flex-col items-center px-2">
+{{#each productsAll}}
+        <div class=" flex w-full h-24 m-1 p-2" style="place-items: center">
+            <div class="w-8 mr-2 text-center font-bold">{{id}}</div>
+            <div class="w-3/4">{{title}}</div>
+            <div class="w-20 text-center">${{price}}</div>
+            <div class="w-48 flex justify-center bg-black"><img alt="image" class="h-20" style="max-width: 10em; object-fit: contain" src={{thumbail}}></div>
+        </div>
+{{/each}}
+    </div>
+</div>
+<script src="/js/productsClient.js" type="module"></script>
